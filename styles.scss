@@ -1,0 +1,68 @@
+@font-face{
+    font-family: "Inter";
+    src: url('assets,fonts,Inter.ttf');
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter",sans-serif;
+    font-size: 14px;
+}
+$Green: hsl(75, 94%, 57%);
+
+$White: hsl(0, 0%, 100%);
+
+$Grey-700: hsl(0, 0%, 20%);
+$Grey-800: hsl(0, 0%, 12%);
+$Grey-900: hsl(0, 0%, 8%);
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: $Grey-900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .card{
+        width: 300px;
+        height:fit-content;
+        background-color: $Grey-800;
+        text-align: center;
+        padding: 25px;
+        color: $White;
+        border-radius: 5px;
+        .bg-img{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+
+        }
+        h2{
+            font-size: 1.4rem;
+            margin: 15px 0 5px;
+            
+        }
+        .place{
+            color: $Green;
+        }
+        .text{
+            margin: 15px 0;
+        }
+        .links{
+            a{
+            color: $White;
+            display: block;  
+            text-decoration: none;
+            background-color:$Grey-700;
+            padding: 10px 0px;
+            margin-top: 8px;
+            border-radius: 5px;
+            &:hover{
+            background-color:$Green;
+            color: $Grey-900;
+            }
+            }
+        }
+    }
+}
